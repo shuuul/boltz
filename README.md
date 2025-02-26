@@ -16,6 +16,19 @@ Boltz-1 is the state-of-the-art open-source model to predict biomolecular struct
 
 All the code and weights are provided under MIT license, making them freely available for both academic and commercial uses. For more information about the model, see our [technical report](https://doi.org/10.1101/2024.11.19.624167). To discuss updates, tools and applications join our [Slack channel](https://join.slack.com/t/boltz-community/shared_invite/zt-2zj7e077b-D1R9S3JVOolhv_NaMELgjQ).
 
+## Using with uv
+Install environment with uv:
+
+```
+uv sync --all-extras
+```
+
+You can run inference using Boltz-1 with:
+
+```
+uv run boltz predict input_path --use_msa_server
+```
+
 ## Installation
 Install boltz with PyPI (recommended):
 
